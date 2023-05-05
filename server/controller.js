@@ -11,7 +11,7 @@ module.exports = {
     },
 
     getNonCompliment: (req, res) => {
-        const nonCompliments = ["Gee... you're... um, really smart!", "Cool... uh,  shirt!", "Your Javascript skills are... hmmm... stellar!"];
+        const nonCompliments = ["Gee... you're... um, really smart!", "Cool... uh,  socks!", "Your Javascript skills are... hmmm... stellar!"];
       
         // choose random nonCompliment
         let randomIndex1 = Math.floor(Math.random() * nonCompliments.length);
