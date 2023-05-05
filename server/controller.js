@@ -30,14 +30,14 @@ module.exports = {
         res.status(200).send(randomSuperpower);
     },
 
-    getPetPokémon: (req, res) => {
-        const petPokémon = ["You now have a pet Pikachu!", "You now have a pet Onix!", "You now have a pet Bulbasaur!", "You now have a pet MewTwo!", "You now have a pet Greninja!", "You now have a pet Arbok!", "You now have a pet Arcanine!", "You now have a pet Charmander!", "You now have a pet Charizard!", "You now have a pet Gyarados!", "You now have a pet Blastoise!", "You now have a pet Ninetales!"];
+    getPetPokemon: (req, res) => {
+        const petPokemons = ["You now have a pet Pikachu!", "You now have a pet Onix!", "You now have a pet Bulbasaur!", "You now have a pet MewTwo!", "You now have a pet Greninja!", "You now have a pet Arbok!", "You now have a pet Arcanine!", "You now have a pet Charmander!", "You now have a pet Charizard!", "You now have a pet Gyarados!", "You now have a pet Blastoise!", "You now have a pet Ninetales!"];
       
-        // choose random petPokémon
-        let randomIndex3 = Math.floor(Math.random() * petPokémon.length);
-        let randomPetPokémon = compliments[randomIndex3];
+        // choose random petPokemon
+        let randomIndex3 = Math.floor(Math.random() * petPokemons.length);
+        let randomPetPokemon = petPokemons[randomIndex3];
       
-        res.status(200).send(randomPetPokémon);
-    },
+        res.status(200).send(randomPetPokemon);
+    }
 
 }

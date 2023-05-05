@@ -27,3 +27,13 @@ const getSuperpower = () => {
     });
 };
 superpowerBtn.addEventListener('click', getSuperpower)
+
+const petPokemonBtn = document.getElementById("petPokemonButton")
+const getPetPokemon = () => {
+    axios.get("http://localhost:4000/api/petPokemon/")
+        .then(res => {
+            const data = res.data;
+            alert(data);
+    });
+};
+petPokemonBtn.addEventListener('click', getPetPokemon)

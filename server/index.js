@@ -7,11 +7,11 @@ app.use(cors());
 
 app.use(express.json());
 
-const { getCompliment, getNonCompliment, getSuperpower, getPetPokémon } = require('./controller')
+const { getCompliment, getNonCompliment, getSuperpower, getPetPokemon } = require('./controller')
 
 app.get("/api/compliment", getCompliment)
 app.get("/api/nonCompliment", getNonCompliment)
 app.get("/api/superpower", getSuperpower)
-app.get("/api/superpower", getPetPokémon)
+app.get("/api/superpower", getPetPokemon)
 
 app.listen(4000, () => console.log("Server running on 4000"));
