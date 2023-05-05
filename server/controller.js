@@ -21,7 +21,7 @@ module.exports = {
     },
 
     getDessert: (req, res) => {
-        const desserts = ["Here, have a banana split with whipped cream and a cherry on top!", "Here, have a root beet float!", "Here, have a chocolate sundae!", "Here, have a brownie with vanilla ice cream and hot fudge!", "Here, have a fruit salad!", "Here, have a slice of birthday cake!", "Here, have a rainbow sherbet!"];
+        const desserts = ["Here, have a banana split with strawberries, whipped cream, AND a cherry on top!", "Here, have a root beet float!", "Here, have a chocolate sundae!", "Here, have a brownie with vanilla ice cream AND hot fudge!", "Here, have a fruit salad!", "Here, have a slice of birthday cake!", "Here, have a rainbow sherbet!"];
               
         // choose random dessert
         let randomIndex2 = Math.floor(Math.random() * desserts.length);

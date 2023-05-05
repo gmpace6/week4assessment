@@ -11,8 +11,8 @@ const { getCompliment, getNonCompliment, getDessert, getSuperpower, getPetPokemo
 
 app.get("/api/compliment", getCompliment)
 app.get("/api/nonCompliment", getNonCompliment)
-app.get("/api/nonCompliment", getDessert)
+app.get("/api/dessert", getDessert)
 app.get("/api/superpower", getSuperpower)
-app.get("/api/superpower", getPetPokemon)
+app.get("/api/petPokemon", getPetPokemon)
 
 app.listen(4000, () => console.log("Server running on 4000"));
