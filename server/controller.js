@@ -8,6 +8,16 @@ module.exports = {
         let randomCompliment = compliments[randomIndex];
       
         res.status(200).send(randomCompliment);
+    },
+
+    getNonCompliment: (req, res) => {
+        const nonCompliments = ["Gee... you're... um, really smart!", "Cool... uh,  shirt!", "Your Javascript skills are... hmmm... stellar!"];
+      
+        // choose random nonCompliment
+        let randomIndex1 = Math.floor(Math.random() * nonCompliments.length);
+        let randomNonCompliment = nonCompliments[randomIndex1];
+      
+        res.status(200).send(randomNonCompliment);
     }
 
 }
