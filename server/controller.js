@@ -18,6 +18,16 @@ module.exports = {
         let randomNonCompliment = nonCompliments[randomIndex1];
       
         res.status(200).send(randomNonCompliment);
+    },
+
+    getSuperpower: (req, res) => {
+        const superpowers = ["You are granted the power of healing!", "You are granted the power of teleportation!", "You are granted the power of telekinesis!", "You are granted the power of pyrokinesis!", "You are granted the power of invisibility!", "You are granted the power of time travel!", "You are granted the power of super speed and super strength!", "You are granted the power of alchemical transmutation!", "You are granted the power of telepathy!", "You are granted the power of clairvoyance!", "You are granted the power of precognition!", "You are granted the power of mind control!", "Error 404: Genie out to lunch; please try again soon!", "You are granted the power of straight-up, reality-warping MAGIC!!!"];
+      
+        // choose random superpower
+        let randomIndex2 = Math.floor(Math.random() * superpowers.length);
+        let randomSuperpower = superpowers[randomIndex2];
+      
+        res.status(200).send(randomSuperpower);
     }
 
 }

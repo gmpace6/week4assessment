@@ -17,3 +17,13 @@ const getNonCompliment = () => {
     });
 };
 nonComplimentBtn.addEventListener('click', getNonCompliment)
+
+const superpowerBtn = document.getElementById("superpowerButton")
+const getSuperpower = () => {
+    axios.get("http://localhost:4000/api/superpower/")
+        .then(res => {
+            const data = res.data;
+            alert(data);
+    });
+};
+superpowerBtn.addEventListener('click', getSuperpower)
