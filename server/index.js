@@ -7,10 +7,11 @@ app.use(cors());
 
 app.use(express.json());
 
-const { getCompliment, getNonCompliment, getSuperpower, getPetPokemon } = require('./controller')
+const { getCompliment, getNonCompliment, getDessert, getSuperpower, getPetPokemon } = require('./controller')
 
 app.get("/api/compliment", getCompliment)
 app.get("/api/nonCompliment", getNonCompliment)
+app.get("/api/nonCompliment", getDessert)
 app.get("/api/superpower", getSuperpower)
 app.get("/api/superpower", getPetPokemon)
 

@@ -18,6 +18,16 @@ const getNonCompliment = () => {
 };
 nonComplimentBtn.addEventListener('click', getNonCompliment)
 
+const dessertBtn = document.getElementById("dessertButton")
+const getDessert = () => {
+    axios.get("http://localhost:4000/api/dessert/")
+        .then(res => {
+            const data = res.data;
+            alert(data);
+    });
+};
+dessertBtn.addEventListener('click', getDessert)
+
 const superpowerBtn = document.getElementById("superpowerButton")
 const getSuperpower = () => {
     axios.get("http://localhost:4000/api/superpower/")
